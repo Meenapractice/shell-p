@@ -9,3 +9,5 @@ echo "Username is $USER_NAME"
 
 echo "Please enter password:"
 read -s PASSWORD # -s is to not print the entered text in console
+
+echo "Password is $PASSWORD"
