@@ -10,16 +10,26 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+mkdir -p $LOGS_FOLDER
+
 if [ $USER_ID -ne 0 ]; then
    echo -e "$R Please run the script with root user $N" | tee -a $LOGS_FILE
    exit 1
 fi
 
+VALIDATE(){
+    if [ $1 -ne 0 ]; then
+      echo " $2 ... FAILURE"
+    else
+      echo " $2.... SUCCESS"
+    fi
+}
+
 for package in $@
 do
    dnf list installed $package &>>$LOGS_FILE
  if [ $? -ne 0 ]; then
-   echoo "$package not installed"
+   echo "$package not installed"
    dnf install $package -y &>>$LOGS_FILE
 else
   echo "$package installed ... SKIPPING"
