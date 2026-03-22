@@ -19,7 +19,7 @@ for package in $@
 do
    dnf list installed $package &>>$LOGS_FILE
  if [ $? -ne 0 ]; then
-   echo "$package not installed"
+   echoo "$package not installed"
    dnf install $package -y &>>$LOGS_FILE
 else
   echo "$package installed ... SKIPPING"
