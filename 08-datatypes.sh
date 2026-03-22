@@ -8,3 +8,5 @@ echo "Sum of numbers: $SUM"
 
 Fruits=("Apple" "Banana" "Pomo")
 echo "Furuits info : ${Fruits[@]}"
+echo "Fruit 1 is :${Fruits[0]}"
+
