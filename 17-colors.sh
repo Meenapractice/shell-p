@@ -3,10 +3,10 @@
 USER_ID=$(id -u)
 LOGS_FOLDER="var/log/shell-practice/"
 LOGS_FILE="$LOGS_FOLDER/$0"
-R='\e[31m'
-G='\e[32m'
-Y='\e[33m'
-N='\e[0m'
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
 if [ $USER_ID -ne 0 ]; then
     echo -e "$R Please run the script with root user $N" | tee -a $LOGS_FILE
