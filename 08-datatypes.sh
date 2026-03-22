@@ -6,5 +6,5 @@ NUM2=Meena
 SUM=$(($NUM1 + $NUM2))
 echo "Sum of numbers: $SUM"
 
-Fruits=["Apple" "Banana" "Pomo"]
+Fruits=("Apple" "Banana" "Pomo")
 echo "Furuits info : ${Fruits[@]}
