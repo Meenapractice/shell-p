@@ -10,3 +10,4 @@ fi
 
 FILES_TO_DELETE=$(find . -iname "*.log" -type f -mtime +14)
 
+echo $FILES_TO_DELETE
