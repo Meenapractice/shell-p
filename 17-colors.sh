@@ -13,6 +13,8 @@ if [ $USER_ID -ne 0 ]; then
     exit 1
 fi
 
+mkdir -p $LOGS_FOLDER
+
 VALIDATE(){
     if [ $1 -ne 0 ]; then
        echo -e "$2 ... $R FAILURE $N" | tee -a $LOGS_FILE
