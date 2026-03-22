@@ -8,6 +8,6 @@ if [ ! -d $LOGS_FOLDER ]; then
     exit 1
 fi
 
-FILES_TO_DELETE=$(find . -iname "*.log" -type f -mtime +14)
+FILES_TO_DELETE=$(find $LOGS_FOLDER -name "*.log" -mtime +14)       
 
 echo $FILES_TO_DELETE
