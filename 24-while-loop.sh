@@ -9,5 +9,6 @@ count=1
 # done
 
 while IFS= read -r line
+do
 echo $line
-do << ./21-script-1.sh
+done < './21-script-1.sh'
