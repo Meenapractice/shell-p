@@ -10,4 +10,4 @@ count=1
 
 while IFS= read -r line
 echo $line
-do < ./21-script-1.sh
+do << ./21-script-1.sh
