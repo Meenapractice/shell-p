@@ -11,3 +11,10 @@ fi
 FILES_TO_DELETE=$(find $LOGS_FOLDER -name "*.log" -mtime +14)       
 
 echo $FILES_TO_DELETE
+
+while IFS= read -r filepath
+do
+ echo "Deleting the file $filepath"
+ rm -f $filepath
+ echo "Delete $filepath"
+ done <<< $FILES_TO_DELETE
