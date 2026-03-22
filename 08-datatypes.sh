@@ -7,4 +7,4 @@ SUM=$(($NUM1 + $NUM2))
 echo "Sum of numbers: $SUM"
 
 Fruits=("Apple" "Banana" "Pomo")
-echo "Furuits info : ${Fruits[@]}
+echo "Furuits info : ${Fruits[@]}"
