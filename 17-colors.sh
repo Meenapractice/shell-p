@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USER_ID=$(id -u)
-LOGS_FOLDER="var/log/shell-practice/"
+LOGS_FOLDER="/var/log/shell-practice/"
 LOGS_FILE="$LOGS_FOLDER/$0"
 R="\e[31m"
 G="\e[32m"
