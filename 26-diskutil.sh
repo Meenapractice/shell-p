@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Message=""
+MESSAGE=""
 USAGE_THRESHOLD=3
 
 DISK_USAGE=$(df -hT | grep -v Filesystem)
