@@ -3,7 +3,7 @@
 Message=""
 USAGE_THRESHOLD=3
 
-DISK_USAGE=$(df -ht | grep -v Filesystem)
+DISK_USAGE=$(df -hT | grep -v Filesystem)
 
 while IFS= read -r line
 do
